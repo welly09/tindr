@@ -1,0 +1,58 @@
+﻿@model JsonJobLists.Models.getData
+
+@{
+    ViewBag.Title = "GetUsersHugeData";
+}
+
+<h2>GetUsersHugeData</h2>
+
+<div>
+    <h4>getData</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.client)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.client)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Jobnumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Jobnumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JobName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Due)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Due)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
